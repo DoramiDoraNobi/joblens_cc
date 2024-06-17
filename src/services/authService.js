@@ -5,6 +5,11 @@ const { addUser, getUserByEmail } = require('../models/userModel');
 const JWT_SECRET = process.env.JWT_SECRET;
 
 const registerUser = async (email, password, name) => {
+  const userExists = await getUserByEmail(email);
+  if (userExists) {
+    throw new Error('User already exists');
+  }
+
   const hashedPassword = await hashPassword(password);
   const user = {
     id: email,  // Menggunakan email sebagai ID unik
@@ -21,10 +26,12 @@ const loginUser = async (email, password) => {
   if (!user) {
     throw new Error('User not found');
   }
+
   const isPasswordValid = await comparePassword(password, user.password);
   if (!isPasswordValid) {
     throw new Error('Invalid password');
   }
+
   const token = jwt.sign({ id: user.id, email: user.email }, JWT_SECRET, { expiresIn: '1h' });
   return { user, token };
 };

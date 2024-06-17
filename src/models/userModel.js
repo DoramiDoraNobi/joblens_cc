@@ -6,12 +6,16 @@ const addUser = async (user) => {
 };
 
 const getUserByEmail = async (email) => {
-  const usersRef = firestore.collection('users');
-  const snapshot = await usersRef.where('email', '==', email).get();
-  if (snapshot.empty) {
-    return null;
+  try {
+    const usersRef = firestore.collection('users');
+    const snapshot = await usersRef.where('email', '==', email).get();
+    if (snapshot.empty) {
+      return null;
+    }
+    return snapshot.docs[0].data();
+  } catch (error) {
+    throw new Error('Firestore error: ' + error.message);
   }
-  return snapshot.docs[0].data();
 };
 
 module.exports = {

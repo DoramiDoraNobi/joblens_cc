@@ -14,7 +14,7 @@ const loginHandler = async (request, h) => {
   const { email, password } = request.payload;
   try {
     const { user, token } = await loginUser(email, password);
-    return h.response({ status: 'success', message: 'User logged in successfully', data: { user, token } }).code(200);
+    return h.response({ status: 'success', message: 'User logged in successfully', data: { user, token, expires_in: 3600 } }).code(200);
   } catch (error) {
     return h.response({ status: 'error', message: error.message }).code(400);
   }
