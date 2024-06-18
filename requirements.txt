@@ -1,0 +1,8 @@
+flask
+pandas
+scikit-learn==1.2.2
+faiss-cpu
+joblib
+google-cloud-storage
+google-cloud-firestore
+gunicorn
