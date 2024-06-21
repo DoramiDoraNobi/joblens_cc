@@ -1,63 +1,38 @@
 # joblens_cc
 # JobLens: Optimizing LinkedIn Job Matches Through Skill-Based Recommendation System
 
-## Deskripsi
-JobLens adalah sebuah aplikasi yang bertujuan untuk mengatasi masalah kesenjangan antara keterampilan pencari kerja dan peluang kerja yang tersedia di Indonesia. Dengan menggunakan sistem rekomendasi berbasis keterampilan, JobLens memberikan rekomendasi pekerjaan yang lebih akurat dan relevan.
+## Description
+JobLens is an app that aims to address the gap between job seekers' skills and available job opportunities in Indonesia. By using a skill-based recommendation system, JobLens provides more accurate and relevant job recommendations.
 
-## Daftar Isi
-- [Deskripsi](#deskripsi)
-- [Fitur Utama](#fitur-utama)
-- [Penggunaan](#penggunaan)
-- [Kontribusi](#kontribusi)
-- [Lisensi](#lisensi)
-- [Kontak](#kontak)
+## Table of Contents
+- [Description](#description)
+- [Key Features](#key-features)
+- [Usage](#usage)
+- [Contact](#contact)
 
-## Fitur Utama
-- Rekomendasi pekerjaan berbasis keterampilan
-- Desain antarmuka pengguna yang intuitif
-- Mekanisme umpan balik pengguna
-- Perlindungan terhadap bias dan diskriminasi
-- Solusi untuk masalah cold start
+## Key Features
+- Skill-based job recommendations
+- Intuitive user interface design
+- User feedback mechanism
+- Protection against bias and discrimination
+- Solution to cold start problem
 
-## Penggunaan
-Cara menggunakan proyek ini:
+## Use of
+How to use this project:
 
-1. **Daftar atau Masuk:**
-   - Buka aplikasi dan daftar akun baru atau masuk dengan akun yang sudah ada.
-2. **Tambahkan Keterampilan:**
-   - Pilih dan tambahkan keterampilan Anda untuk mendapatkan rekomendasi pekerjaan yang sesuai.
-3. **Lihat Rekomendasi Pekerjaan:**
-   - Lihat daftar pekerjaan yang direkomendasikan berdasarkan keterampilan Anda.
-4. **Detail Pekerjaan:**
-   - Klik pada pekerjaan untuk melihat deskripsi pekerjaan, persyaratan, dan keterampilan yang dibutuhkan.
-5. **Lamar Pekerjaan:**
-   - Lamar pekerjaan langsung dari aplikasi.
+1. **Register or Login:**
+   - Open the app and register a new account or sign in with an existing account.
+2. **Add Skills:**
+   - Select and add your skills to get suitable job recommendations.
+3. **View Job Recommendations:**
+   - View a list of recommended jobs based on your skills.
+4. **Job Details:**
+   - Click on a job to view the job description, requirements, and skills required.
+5. **Apply for Jobs:**
+   - Apply for jobs directly from the app.
 
-## Kontribusi
-Kami menerima kontribusi dari siapa saja. Berikut langkah-langkah untuk berkontribusi:
-
-1. **Fork repositori ini.**
-2. **Buat branch fitur baru:**
-    ```bash
-    git checkout -b fitur-baru
-    ```
-3. **Commit perubahan Anda:**
-    ```bash
-    git commit -am 'Menambahkan fitur baru'
-    ```
-4. **Push ke branch:**
-    ```bash
-    git push origin fitur-baru
-    ```
-5. **Buat Pull Request.**
-
-Harap pastikan kode Anda mengikuti panduan gaya dan semua tes telah dilalui.
-
-## Lisensi
-Proyek ini dilisensikan di bawah lisensi MIT. Lihat file [LICENSE](LICENSE) untuk informasi lebih lanjut.
-
-## Kontak
-Untuk pertanyaan lebih lanjut, silakan hubungi kami di:
+## Contact
+For further inquiries, please contact us at:
 
 - **Inda Lely Nurita:** M012D4KX1469@bangkit.academy
 - **Agna Aldhaka Indra Alam:** M279D4KY1934@bangkit.academy
