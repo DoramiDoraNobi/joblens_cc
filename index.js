@@ -1,7 +1,7 @@
 const express = require('express');
 const axios = require('axios');
 const app = express();
-const port = 3000;
+const port = 8080;
 
 app.use(express.json());
 
@@ -13,7 +13,7 @@ app.post('/recommend-jobs', async (req, res) => {
     }
 
     try {
-        const response = await axios.post('http://localhost:5000/recommend-jobs', { skills });
+        const response = await axios.post('http://localhost:8080/recommend-jobs', { skills });
         res.send(response.data);
     } catch (error) {
         console.error(`Error communicating with Flask server: ${error}`);

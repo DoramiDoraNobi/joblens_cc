@@ -1,5 +1,5 @@
-node_modules
 venv
+node_modules
 *.pyc
 __pycache__
 .git
